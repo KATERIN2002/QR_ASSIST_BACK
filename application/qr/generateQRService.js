@@ -4,7 +4,7 @@ const generateQRService = (req, res) => {
   let qr = "";
 
   QRCode.toString(
-    "https://gxxqktgc-3000.use.devtunnels.ms/",
+    "https://gzqz068f-3000.use2.devtunnels.ms/",
     function (err, string) {
       if (err) throw err;
       qr = string;
@@ -16,7 +16,7 @@ const generateQRService = (req, res) => {
 
   res
     .status(200)
-    .json({ qrString: qr, url: "https://gxxqktgc-3000.use.devtunnels.ms/" });
+    .json({ qrString: qr, url: "https://gzqz068f-3000.use2.devtunnels.ms/" });
 };
 
 module.exports = {

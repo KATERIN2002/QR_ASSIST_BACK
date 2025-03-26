@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 app.use("/api", routers);
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send("Hello World! assistance successful");
 });
 
 app.listen(port, () => {
